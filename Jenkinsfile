@@ -5,6 +5,8 @@ pipeline {
         stage('Build Jar') {
             steps {
                 //sh
+                export M2_HOME="/Users/shigovin/Downloads/apache-maven-3.6.2"
+                export PATH="$PATH:/Users/shigovin/Downloads/apache-maven-3.6.2/bin/"
                 sh "mvn clean package -DskipTests"
             }
         }
