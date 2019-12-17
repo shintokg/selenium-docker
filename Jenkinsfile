@@ -3,7 +3,7 @@ pipeline {
     agent any
     environment {
         M2_HOME="/Users/shigovin/Downloads/apache-maven-3.6.2"
-        PATH = PATH="$PATH:/Users/shigovin/Downloads/apache-maven-3.6.2/bin/"
+        PATH="$PATH:/Users/shigovin/Downloads/apache-maven-3.6.2/bin/"
       }
     stages {
         stage('Build Jar') {
