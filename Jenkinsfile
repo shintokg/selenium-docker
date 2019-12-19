@@ -2,8 +2,8 @@ pipeline {
     // master executor should be set to 0
     agent any
     environment {
-        M2_HOME="/Users/shigovin/Downloads/apache-maven-3.6.2"
-        PATH="$PATH:/Users/shigovin/Downloads/apache-maven-3.6.2/bin/"
+        //M2_HOME="/Users/shigovin/Downloads/apache-maven-3.6.2"
+        //PATH="$PATH:/Users/shigovin/Downloads/apache-maven-3.6.2/bin/"
       }
     stages {
         stage('Build Jar') {
